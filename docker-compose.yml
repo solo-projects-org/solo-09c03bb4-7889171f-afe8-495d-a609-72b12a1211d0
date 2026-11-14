@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: lsvar-web:latest
+    container_name: lsvar-web
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
